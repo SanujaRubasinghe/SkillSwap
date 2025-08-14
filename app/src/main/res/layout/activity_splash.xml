@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".SplashActivity">
+
+    <View
+        android:id="@+id/top_background"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/top_curved"
+        android:contentDescription="@string/app_name"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/logo_container"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        app:cardCornerRadius="100dp"
+        android:foregroundGravity="center">
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/skill_swap_logo"
+            android:contentDescription="@string/app_name"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logo_container"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tag_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tag_line"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_title"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/motto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/motto"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="@color/gray_2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+</RelativeLayout>
