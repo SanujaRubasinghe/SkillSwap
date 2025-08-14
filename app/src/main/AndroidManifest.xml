@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SkillSwap">
         <activity
-            android:name=".OnboardingActivity"
+            android:name=".AuthScreenActivity"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
@@ -24,8 +24,11 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".OnboardingActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="false"/>
+            android:exported="false" />
     </application>
 
 </manifest>

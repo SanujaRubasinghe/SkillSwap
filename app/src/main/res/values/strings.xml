@@ -2,4 +2,11 @@
     <string name="app_name">SkillSwap</string>
     <string name="tag_line">Empowering People Through Skills</string>
     <string name="motto">Learn.Teach.Connect.</string>
+    <string name="ob_one_main_title">Share Skills Worldwide</string>
+    <string name="ob_two_main_title">Earn Skill Credits</string>
+    <string name="ob_three_main_title">Learn Anything</string>
+    <string name="ob_one_tag_title">Learn and teach globally</string>
+    <string name="ob_two_tag_title">Teach others and earn credits</string>
+    <string name="ob_three_tag_title">Use credits to learn what you love</string>
+
 </resources>

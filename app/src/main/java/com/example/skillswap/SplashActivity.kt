@@ -33,14 +33,16 @@ class SplashActivity : AppCompatActivity() {
         }
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val pref: SharedPreferences = getSharedPreferences("SkillSwapPrefs", MODE_PRIVATE)
-            val onboardingCompleted = pref.getBoolean("onboardingCompleted", false)
+            val pref: SharedPreferences = getSharedPreferences("prefs", MODE_PRIVATE)
+            val onboardingCompleted = pref.getBoolean("onboarding_done", false)
 
-            if (onboardingCompleted) {
-                startActivity(Intent(this, MainActivity::class.java))
-            } else {
-                startActivity(Intent(this, OnboardingActivity::class.java))
-            }
+            startActivity(Intent(this, OnboardingActivity::class.java))
+
+//            if (onboardingCompleted) {
+//                startActivity(Intent(this, MainActivity::class.java))
+//            } else {
+//                startActivity(Intent(this, OnboardingActivity::class.java))
+//            }
             finish()
         }, 2000)
 
