@@ -49,7 +49,7 @@ class OnboardingActivity : AppCompatActivity() {
                         putBoolean("onboarding_done", true)
                     }
 
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, AuthScreenActivity::class.java))
                 finish()
             }
         }

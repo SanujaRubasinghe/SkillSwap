@@ -8,5 +8,8 @@
     <string name="ob_one_tag_title">Learn and teach globally</string>
     <string name="ob_two_tag_title">Teach others and earn credits</string>
     <string name="ob_three_tag_title">Use credits to learn what you love</string>
+    <string name="terms_and_conditions_disclaimer">
+        By continuing, you agree to our Terms of Service and Privacy Policy
+    </string>
 
 </resources>

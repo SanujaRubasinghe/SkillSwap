@@ -57,17 +57,22 @@
         android:layout_marginTop="100dp"
         android:gravity="center"
         android:id="@+id/auth_btn_container">
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:text="Register"
             android:id="@+id/register_btn"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
             android:layout_marginEnd="10dp"/>
         <Button
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:text="Login"
-            android:id="@+id/lgin_btn"
+            android:backgroundTint="@color/green_3"
+            android:id="@+id/login_btn"
             />
     </LinearLayout>
 
@@ -76,9 +81,13 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_below="@id/auth_btn_container">
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="370dp"
             android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            app:strokeColor="@color/gray_1"
+            app:strokeWidth="2dp"
             android:text="Login with Google"/>
     </LinearLayout>
 
