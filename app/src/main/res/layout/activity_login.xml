@@ -10,16 +10,17 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@drawable/top_curved"/>
+        android:background="@drawable/top_curved" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/back_btn"
-        android:text="Back"
-        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
         android:layout_marginTop="30dp"
-        android:backgroundTint="@color/green_3"/>
+        android:backgroundTint="@color/green_1"
+        app:icon="@drawable/back_arrow"
+        app:iconTint="@null" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/logo_container"
@@ -94,11 +95,18 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login with Google"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            app:strokeColor="@color/gray_1"
+            app:strokeWidth="2dp"
             android:id="@+id/google_login_btn"
+            app:icon="@drawable/google_logo"
+            app:iconTint="@null"
+            app:iconGravity="textStart"
             android:layout_marginTop="50dp"/>
 
         <LinearLayout

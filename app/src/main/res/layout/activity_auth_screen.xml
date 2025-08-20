@@ -88,6 +88,9 @@
             android:backgroundTint="@color/white"
             app:strokeColor="@color/gray_1"
             app:strokeWidth="2dp"
+            app:icon="@drawable/google_logo"
+            app:iconTint="@null"
+            app:iconGravity="textStart"
             android:text="Login with Google"/>
     </LinearLayout>
 
