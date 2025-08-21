@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.skillswap.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_nav_lessons"
+            app:destination="@id/nav_lessons" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_lessons"
+        android:name="com.example.skillswap.LessonFragment"
+        android:label="Lessons"
+        tools:layout="@layout/fragment_lesson">
+        <action
+            android:id="@+id/action_nav_lessons_to_nav_goals"
+            app:destination="@id/nav_goals" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_goals"
+        android:name="com.example.skillswap.GoalsFragment"
+        android:label="Goals"
+        tools:layout="@layout/fragment_goals">
+        <action
+            android:id="@+id/action_nav_goals_to_nav_user_profile"
+            app:destination="@id/nav_user_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_user_profile"
+        android:name="com.example.skillswap.UserProfileFragment"
+        android:label="User Profile"
+        tools:layout="@layout/fragment_user_profile"/>
+
+</navigation>
