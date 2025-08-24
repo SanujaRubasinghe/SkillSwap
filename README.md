@@ -47,5 +47,5 @@ Whether you want to **learn guitar 🎸**, **code in Python 💻**, **practice y
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/SkillSwap.git
+git clone https://github.com/SanujaRubasinghe/SkillSwap.git
 cd SkillSwap
