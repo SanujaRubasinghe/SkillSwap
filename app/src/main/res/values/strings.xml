@@ -20,6 +20,9 @@
     <string name="featured_lessons">Featured Lessons</string>
     <string name="see_all">See All</string>
     <string name="home_banner">Home info banner</string>
+    <string name="john_doe">John Doe</string>
+    <string name="user_skills">Creative Learner and cooking Teacher</string>
+    <string name="skillpoints">SkillPoints: 100</string>
 
 
 </resources>
