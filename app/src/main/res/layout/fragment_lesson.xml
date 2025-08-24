@@ -3,21 +3,79 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_primary"
+    android:padding="20dp">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="My Lessons"
         android:textSize="32sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <SearchView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search"
+        android:background="@drawable/search_bar_bkg"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/completed_section_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_bar"
+        android:layout_marginTop="20dp"
+        android:text="Completed"
+        app:backgroundTint="@color/green_2"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ongoing_section_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_bar"
+        android:layout_marginTop="20dp"
+        android:text="Ongoing"
+        app:backgroundTint="@color/gray_2"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:id="@+id/completed_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_bar"
+        android:layout_marginTop="80dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/completed"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:id="@+id/ongoing_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_bar"
+        android:layout_marginTop="80dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ongoing"/>
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

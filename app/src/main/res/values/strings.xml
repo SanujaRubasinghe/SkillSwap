@@ -11,7 +11,15 @@
     <string name="terms_and_conditions_disclaimer">
         By continuing, you agree to our Terms of Service and Privacy Policy
     </string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Home Section -->
+    <string name="user_greeting">Hi, User!</string>
+    <string name="ic_search_content">Search icon</string>
+    <string name="ic_notification_content">Notification icon</string>
+    <string name="home_tag_line">Ready to swap skills today?</string>
+    <string name="featured_lessons">Featured Lessons</string>
+    <string name="see_all">See All</string>
+    <string name="home_banner">Home info banner</string>
+
 
 </resources>
