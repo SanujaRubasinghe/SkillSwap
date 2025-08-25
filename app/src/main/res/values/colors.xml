@@ -11,4 +11,5 @@
     <color name="gray_1">#d9d9d9</color>
     <color name="gray_2">#8b8787</color>
     <color name="gray_3">#f7f7f7</color>
+    <color name="notification_card">#E4E1E1</color>
 </resources>
