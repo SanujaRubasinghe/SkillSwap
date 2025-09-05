@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="My Lessons"
+        android:text="@string/my_lessons"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/search_bar"
         android:layout_marginTop="20dp"
-        android:text="Completed"
+        android:text="@string/completed"
         app:backgroundTint="@color/green_2"/>
 
     <com.google.android.material.button.MaterialButton
@@ -48,7 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/search_bar"
         android:layout_marginTop="20dp"
-        android:text="Ongoing"
+        android:text="@string/ongoing"
         app:backgroundTint="@color/gray_2"/>
 
     <androidx.cardview.widget.CardView
@@ -61,7 +61,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/completed"/>
+            android:background="@drawable/completed"
+            android:contentDescription="@string/lesson_card"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -74,7 +75,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/ongoing"/>
+            android:background="@drawable/ongoing"
+            android:contentDescription="@string/lesson_card"/>
     </androidx.cardview.widget.CardView>
 
 

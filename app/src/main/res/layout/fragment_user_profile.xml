@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="My Profile"
+        android:text="@string/my_profile"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +74,7 @@
         app:layout_constraintTop_toBottomOf="@id/user_info"
         android:layout_marginTop="20dp"
         android:src="@drawable/achievements"
-        android:contentDescription="user achievements"/>
+        android:contentDescription="@string/user_achievements"/>
 
     <ImageView
         android:layout_width="0dp"
@@ -84,7 +84,7 @@
         app:layout_constraintTop_toBottomOf="@id/achievement_section"
         android:layout_marginTop="20dp"
         android:src="@drawable/skill_section"
-        android:contentDescription="user skills section"/>
+        android:contentDescription="@string/user_skills_section"/>
 
 
 
